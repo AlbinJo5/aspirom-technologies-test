@@ -23,12 +23,9 @@ app.use(
   })
 );
 
-console.log(1);
-
 // Middleware for parsing JSON and formatting responses
 app.use(express.json());
 app.use(responseFormatter);
-console.log(2);
 
 // CORS middleware
 app.use(
